@@ -5,6 +5,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using CryptoSolver.Properties;
 
 
 //Cmdline arguments to check:
@@ -19,10 +20,7 @@ namespace CryptoSolver
 
             Menu menu = new Menu();
             menu.OpenMenu();
-
-            
-
-
+            //test
         }
 
     }
@@ -55,7 +53,7 @@ namespace CryptoSolver
             
             //Load files
             Sol sol = new Sol();
-            sol.RCheck(sol.RWordFinder(UserInput), sol.Solve(UserInput.Length, "index_list.txt"));
+            sol.RCheck(sol.RWordFinder(UserInput), sol.Solve(UserInput.Length, "/Resources/index_list"));
 
             //Restart
             Console.WriteLine("\nSearch a new solution? (y/n)\n");
